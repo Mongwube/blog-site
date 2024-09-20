@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+	
+		
+}
+
+/* mobile menu bar */
+.mobilenav{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    height: 4rem;
+    /* gap: 4rem; */
+    /* background-color: #000; */
+    box-shadow: 0 0 3px rgb(0,0,0,0.5);
+}
+.mobilelogo{
+    height: 3rem;
+}
+#menubtn{
+    background-color: rgb(83, 82, 82);
+    color: whitesmoke;
+    /* display: block; */
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 10rem;
+}
+/*side bar is visible in this view*/
+#sidenav{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    /* background-color: aqua; */
+    width: 13rem;
+    height: 100vh;
+    padding-left: 1.5rem;
+    background: rgb(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+
+.sidelogo{
+    height: 3rem;
+    padding-top: 1.5rem;
+}
+.sidelogo i{
+    font-size: 1.2rem;
+}
+.sidelinks{
+    display: inline-grid;
+    gap: 1.5rem;
+    /* display: none; */
+}
+.sidelinks a{
+    text-decoration: none;
+    color: black;
+    /* display: none; */
+}
+
+.sidelogin{
+    height: 10rem;
+    width: 100%;
+    display: inline-flex;
+    gap: .2rem;
+    /* display: none; */
+}
+.sideloginbtn {
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    /* display: none; */
+}
+
+
+/*Top bar for big screen size not visible.*/
+.nav{
+    display: none;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    width: 100%;
+    height: 6rem;
+    gap: 4rem;
+    /* background-color: #000; */
+    box-shadow: 0 0 3px rgb(0,0,0,0.5);
+}
+.links{
+    display: none;
+    gap: 1.5rem;
+}
+.links a{
+    display: none;
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    display: none;
+    gap: 1rem;
+}
+.login button {
+    display: none;
+    width: 5rem;
+    height: 2rem;
+    border-radius: .5rem;
+}
+.loginbtn{
+    background: none;
+}
+.signupbtn{
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 360px) {
+    /* mobile menu bar */
+    .mobilenav{
+        padding-top: 1rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 4rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        height: 3rem;
+    }
+    #menubtn{
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 13rem;
+    }
+    /*side bar is visible in this view*/
+    #sidenav{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        /* background-color: aqua; */
+        width: 13rem;
+        height: 100vh;
+        padding-left: 1.5rem;
+        background: rgb(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    
+    .sidelogo{
+        height: 3rem;
+        padding-top: 1.5rem;
+    }
+    .sidelogo i{
+        font-size: 1.2rem;
+    }
+    .sidelinks{
+        display: inline-grid;
+        gap: 1.5rem;
+        /* display: none; */
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        /* display: none; */
+    }
+
+    .sidelogin{
+        height: 10rem;
+        width: 100%;
+        display: inline-flex;
+        gap: .2rem;
+        /* display: none; */
+    }
+    .sideloginbtn {
+        width: 4.5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        /* display: none; */
+    }
+    
+
+    /*Top bar for big screen size not visible.*/
+    .nav{
+        display: none;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: none;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: none;
+        gap: 1rem;
+    }
+    .login button {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 390px) {
+    /* mobile menu bar */
+    .mobilenav{
+        padding-top: 1rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 4rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        height: 3rem;
+    }
+    #menubtn{
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 15rem;
+    }
+    /*side bar is visible in this view*/
+    #sidenav{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        /* background-color: aqua; */
+        width: 13rem;
+        height: 100vh;
+        padding-left: 1.5rem;
+        background: rgb(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    
+    .sidelogo{
+        height: 3rem;
+        padding-top: 1.5rem;
+    }
+    .sidelogo i{
+        font-size: 1.2rem;
+    }
+    .sidelinks{
+        display: inline-grid;
+        gap: 1.5rem;
+        /* display: none; */
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        /* display: none; */
+    }
+
+    .sidelogin{
+        height: 10rem;
+        width: 100%;
+        display: inline-flex;
+        gap: .2rem;
+        /* display: none; */
+    }
+    .sideloginbtn {
+        width: 4.5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        /* display: none; */
+    }
+    
+
+    /*Top bar for big screen size not visible.*/
+    .nav{
+        display: none;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: none;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: none;
+        gap: 1rem;
+    }
+    .login button {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 412px) {
+    /* mobile menu bar */
+    .mobilenav{
+        padding-top: 1rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 4rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        height: 3rem;
+    }
+    #menubtn{
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 16.5rem;
+    }
+    /*side bar is visible in this view*/
+    #sidenav{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        /* background-color: aqua; */
+        width: 13rem;
+        height: 100vh;
+        padding-left: 1.5rem;
+        background: rgb(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    
+    .sidelogo{
+        height: 3rem;
+        padding-top: 1.5rem;
+    }
+    .sidelogo i{
+        font-size: 1.2rem;
+    }
+    .sidelinks{
+        display: inline-grid;
+        gap: 1.5rem;
+        /* display: none; */
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        /* display: none; */
+    }
+
+    .sidelogin{
+        height: 10rem;
+        width: 100%;
+        display: inline-flex;
+        gap: .2rem;
+        /* display: none; */
+    }
+    .sideloginbtn {
+        width: 4.5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        /* display: none; */
+    }
+    
+
+    /*Top bar for big screen size not visible.*/
+    .nav{
+        display: none;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: none;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: none;
+        gap: 1rem;
+    }
+    .login button {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 430px) {
+    /* mobile menu bar */
+    .mobilenav{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 4rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        height: 3rem;
+    }
+    #menubtn{
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 16.5rem;
+    }
+    /*side bar is visible in this view*/
+    #sidenav{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        /* background-color: aqua; */
+        width: 13rem;
+        height: 100vh;
+        padding-left: 1.5rem;
+        background: rgb(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    
+    .sidelogo{
+        height: 3rem;
+        padding-top: 1.5rem;
+    }
+    .sidelogo i{
+        font-size: 1.2rem;
+    }
+    .sidelinks{
+        display: inline-grid;
+        gap: 1.5rem;
+        /* display: none; */
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        /* display: none; */
+    }
+
+    .sidelogin{
+        height: 10rem;
+        width: 100%;
+        display: inline-flex;
+        gap: .2rem;
+        /* display: none; */
+    }
+    .sideloginbtn {
+        width: 4.5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        /* display: none; */
+    }
+    
+
+    /*Top bar for big screen size not visible.*/
+    .nav{
+        display: none;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: none;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: none;
+        gap: 1rem;
+    }
+    .login button {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 640px) {
+        /* mobile menu bar */
+    .mobilenav{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 4rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        height: 3rem;
+    }
+    #menubtn{
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 30rem;
+    }
+    /*side bar is visible in this view*/
+    #sidenav{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        /* background-color: aqua; */
+        width: 13rem;
+        height: 100vh;
+        padding-left: 1.5rem;
+        background: rgb(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+    }
+    
+    .sidelogo{
+        height: 3rem;
+        padding-top: 1.5rem;
+    }
+    .sidelogo i{
+        font-size: 1.2rem;
+    }
+    .sidelinks{
+        display: inline-grid;
+        gap: 1.5rem;
+        /* display: none; */
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        /* display: none; */
+    }
+
+    .sidelogin{
+        height: 10rem;
+        width: 100%;
+        display: inline-flex;
+        gap: .2rem;
+        /* display: none; */
+    }
+    .sideloginbtn {
+        width: 4.5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        /* display: none; */
+    }
+    
+
+    /*Top bar for big screen size not visible.*/
+    .nav{
+        display: none;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: none;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: none;
+        gap: 1rem;
+    }
+    .login button {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 768px) {
+    /* mobile menu bar not visible*/
+    .mobilenav{
+        display: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 3rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        display: none;
+        height: 3rem;
+    }
+    #menubtn{
+        display: none;
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 13rem;
+    }
+    /*side bar not visible in this view*/
+    .sidenav{
+        display: none;
+    }
+    .sidelogo{
+        display: none;
+    }
+    .sidelinks{
+        display: inline-flex;
+        gap: 1.5rem;
+        display: none;
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        display: none;
+    }
+
+    .sidelogin{
+        display: inline-flex;
+        gap: 1rem;
+        display: none;
+    }
+    .sidelogin button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        display: none;
+    }
+    /*Top bar for big screen size.*/
+    .nav{
+        display: inline-flex;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .menubtn{
+        display: none;
+    }
+    .links{
+        display: inline-flex;
+        gap: 1.5rem;
+    }
+    .links a{
+        display: inline;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    .login{
+        display: inline-flex;
+        gap: 1rem;
+    }
+    .login button {
+        display: inline;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 820px) {
+    /* mobile menu bar not visible*/
+    .mobilenav{
+        display: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 3rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        display: none;
+        height: 3rem;
+    }
+    #menubtn{
+        display: none;
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 13rem;
+    }
+   /*side bar not visible in this view*/
+       .sidenav{
+        display: none;
+    }
+    .sidelogo{
+        display: none;
+    }
+    .sidelinks{
+        display: inline-flex;
+        gap: 1.5rem;
+        display: none;
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        display: none;
+        font-size: 14px;
+    }
+
+    .sidelogin{
+        display: inline-flex;
+        gap: 1rem;
+        display: none;
+    }
+    .sidelogin button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        display: none;
+    }
+    .nav{
+        display: inline-flex;
+        padding-top: 2rem;
+        padding-left: .8rem;
+        width: 100%;
+        height: 6rem;
+        gap: 4rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .menubtn{
+        display: none;
+    }
+    .links{
+        display: inline-flex;
+        gap: 2.5rem;
+    }
+    .links a{
+        display: inline;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: inline-flex;
+        gap: 1rem;
+    }
+    .login button {
+        display: inline;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 1024px) {
+/* mobile menu bar not visible*/
+    .mobilenav{
+        display: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 3rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        display: none;
+        height: 3rem;
+    }
+    #menubtn{
+        display: none;
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 13rem;
+    }
+     /*side bar not visible in this view*/
+     .sidenav{
+        display: none;
+    }
+    .sidelogo{
+        display: none;
+    }
+    .sidelinks{
+        display: inline-flex;
+        gap: 1.5rem;
+        display: none;
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        display: none;
+    }
+
+    .sidelogin{
+        display: inline-flex;
+        gap: 1rem;
+        display: none;
+    }
+    .sidelogin button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        display: none;
+    }
+    .nav{
+        display: inline-flex;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        height: 6rem;
+        gap: 9rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: inline-flex;
+        gap: 2.5rem;
+    }
+    .menubtn{
+        display: none;
+    }
+    .links a{
+        display: inline;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: inline-flex;
+        gap: 1rem;
+    }
+    .login button {
+        display: inline;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 1280px) {
+    /* mobile menu bar not visible*/
+    .mobilenav{
+        display: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        width: 100%;
+        height: 3rem;
+        /* gap: 4rem; */
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .mobilelogo{
+        display: none;
+        height: 3rem;
+    }
+    #menubtn{
+        display: none;
+        background-color: rgb(83, 82, 82);
+        color: whitesmoke;
+        /* display: block; */
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 13rem;
+    }
+     /*side bar not visible in this view*/
+     .sidenav{
+        display: none;
+    }
+    .sidelogo{
+        display: none;
+    }
+    .sidelinks{
+        display: inline-flex;
+        gap: 1.5rem;
+        display: none;
+    }
+    .sidelinks a{
+        text-decoration: none;
+        color: black;
+        display: none;
+    }
+
+    .sidelogin{
+        display: inline-flex;
+        gap: 1rem;
+        display: none;
+    }
+    .sidelogin button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+        display: none;
+    }
+    /* Desktop menu bar */
+    .nav{
+        display: inline-flex;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        width: 100%;
+        height: 6rem;
+        gap: 16rem;
+        /* background-color: #000; */
+        box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    }
+    .links{
+        display: inline-flex;
+        gap: 2.5rem;
+    }
+    .links a{
+        display: inline;
+        text-decoration: none;
+        color: black;
+    }
+
+    .login{
+        display: inline-flex;
+        gap: 1rem;
+    }
+    .login button {
+        display: inline;
+        width: 5rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .loginbtn{
+        background: none;
+    }
+    .signupbtn{
+        background-color: black;
+        color: white;
+    }
+}

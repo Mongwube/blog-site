@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Upload</title>
+  <script src="https://cdn.tiny.cloud/1/6w3y4jq6sq9uwc0ouwvshoijaxm9h1can3is4441e9o11pxi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: '#blogContent',
+      height: 500,
+      menubar: false
+    });
+  </script>
+</head>
+<body>
+  <h1>Upload Blog Post</h1>
+  <form id="blogForm">
+    <textarea id="blogContent" name="content"></textarea><br>
+    <label for="imageUpload">Upload Image:</label>
+    <input type="file" id="imageUpload" accept="image/*"><br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <script src="upload.js"></script>
+</body>
+</html>
